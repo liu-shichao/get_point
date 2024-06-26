@@ -5,8 +5,6 @@
 ![界面](https://gitee.com/chenqidianzi/pictures/raw/master/get-point/demo.png)
 
 
-
-
 ### 为什么做这个
 1. 用 LTspice 做电路仿真的时候，偶尔会有些元件的参数模型找不到，需要自己根据 datasheet 去计算。
 2. 在生成 B772M 这个三极管的模型时候，曲线图是 10 的指数坐标系的，很难精确的从图中看出曲线上各个点的坐标值。
@@ -14,6 +12,10 @@
 
 ### 工具地址
 1. github: https://liu-shichao.github.io/get_point/
+
+### 源码地址
+1. github: https://github.com/liu-shichao/get_point
+2. gitee: https://gitee.com/chenqidianzi/pictures/tree/master/get-point
 
 
 ### 使用方法
