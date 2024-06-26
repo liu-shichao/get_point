@@ -1,7 +1,7 @@
 ### 是什么
-1.从电子元件的 datasheet 中提取曲线上各点坐标的工具
-2.只支持 10 为底的指数坐标系，其他的可以自己修改
-3.长成这个样子
+1. 从电子元件的 datasheet 中提取曲线上各点坐标的工具
+2. 只支持 10 为底的指数坐标系，其他的可以自己修改
+3. 长成这个样子
 ![界面](https://gitee.com/chenqidianzi/pictures/raw/master/get-point/demo.png)
 
 
