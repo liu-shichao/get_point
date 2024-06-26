@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .sidebar.hide {
+        position: relative;
+        left: -500px;
+      }
+
+      .sidebar.show{
+        left: 0;
+      }
+
+      .sidebar .content {
+        width: 500px;
+        background-color: yellow;
+      }
+
+
+      .sidebar .btn.open{
+        background-color: aqua;
+      }
+
+      .sidebar .btn.close{
+        background-color: black;
+      }
+    </style>
+</head>
+<body>
+    <div class="sidebar hide">
+         <!-- 按钮区域 -->
+        <div class="btn open">弹出</div>
+
+        <div class="content">
+            <form  action="/uploadForm" enctype="multipart/form-data" method="post">
+                <table>
+                    <tbody>
+                       <tr>
+                           <td>算法类型：</td>
+                           <td><input type="text" name="algoCategory"></td>
+                       </tr>
+                       <tr>
+                           <td>任务类型：</td>
+                           <td><input type="text" name="task"></td>
+                       </tr>
+            
+                       <tr>
+                           <td>模型文件：</td>
+                           <td><input type="file" name="model"></td>
+                       </tr>
+            
+                       <tr>
+                           <td>提交：</td>
+                           <td><input type="submit" name="提交"></td>
+                       </tr>
+                    </tbody>
+                </table>
+            </form>
+
+        </div>
+ 
+    </div>
+    
+
+
+    
+</body>
+
+
+<script>
+
+let sidebar = document.querySelector(".sidebar");
+
+let btn = document.querySelector(".sidebar .btn");
+let flag = false;
+btn.onclick = function () {
+    flag = !flag;
+    if (flag) {
+        sidebar.className = "sidebar show";
+        btn.className = "btn close";
+    } else {
+        sidebar.className = "sidebar hide";
+        btn.className = "btn open";
+    }
+};
+
+</script>
+</html>
