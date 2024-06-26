@@ -13,8 +13,7 @@
 3. 于是写了这个工具，目前功能比较单一，后边用到其他的再补充。
 
 ### 工具地址
-1. github:
-2. gitee:
+1. github: https://liu-shichao.github.io/get_point/
 
 
 ### 使用方法
