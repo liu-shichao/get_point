@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <script src="jquery-1.8.3.js"></script>
+    <script src=".\linear.js"></script>
+<title>get point</title>
+</head>
+<body>
+    <input type="file" id="files" style="display: none" onchange="fileImport();">
+    <input type="button" id="fileImport" value="导入"> 用法：1.导入图片。2.按照右侧序号的顺序操作
+    <hr/>
+    <div style="width: 100%; text-align: center; display: flex;">
+        <canvas id="plot" width="800" height="800" style="background-color: rgb(182, 182, 182);"></canvas>
+        <hr/>
+        <div> 
+            1.输入原点坐标：<br/>
+            x:<input id="org-x" type="text" value="0" style="width: 5rem;"/> y:<input id="org-y" type="text" value="1" style="width: 5rem;"/> 
+            <hr/>
+            2.点击图片中原点位置：<br/>
+            <span id="origin-pos">x:100 y:200</span>
+            <hr/>
+            3.随便输入一个x轴上点x坐标：<br/>
+            x:<input id="first-x" type="text" value="0" style="width: 5rem;"/> 
+            <hr/>
+            4.点击图片中对应点位置：<br/>
+            <span id="first-x-pos">x:100 y:200</span>
+            <hr/>
+            5.随便输入一个y轴上点y坐标：<br/>
+            y:<input id="first-y" type="text" value="1" style="width: 5rem;"/> 
+            <hr/>
+            6.点击图片中对应点位置：<br/>
+            <span id="first-y-pos">x:100 y:200</span>
+            <hr/>
+            3.点击曲线获取坐标：<br/>
+            <span id="result-points" style="white-space:pre-wrap;"> 123 456 <br/> 123 456 <br/> 123 456 <br/> </span>
+        </div>
+    </div>
+</body>
+
+</html>
